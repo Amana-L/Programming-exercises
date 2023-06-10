@@ -47,14 +47,3 @@ class Checkout:
         total_price = sum(item['price'] for item in self.cart.values())
         return f"Total: ${total_price:.2f}"
 
-checkout = Checkout()
-
-print('To terminate, enter n')
-scan = str('o')
-while scan != 'n':
-    scan = str(input())
-    result1 = print(checkout.scan(scan, 1))
-
-print(checkout.total())
-
-
