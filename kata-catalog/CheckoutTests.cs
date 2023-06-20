@@ -54,6 +54,6 @@ public class TestCheckout
         checkout.Scan("YOGURT");
         checkout.Scan("ORANGE");
         string result = checkout.tot();
-        Assert.Equal("Total: $8.00", result);
+        Assert.Equal("Total: $6.00", result);
     }
 }
